@@ -163,7 +163,7 @@ class ApiPage {
 
 	public static function getDefaultFieldSelectArray() {
 		return array(array('0' => '0', '1'=> false, '2' => 'Use Entry ID Number'));
-;	}
+	}
 
 	/**
 	 * Given a `$name`, this function returns the setting for this API Page Settings object.

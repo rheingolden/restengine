@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="restengine" status="experimental" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Rest Engine</name>
+	<description>A custom events plugin to assist in the development of RESTful APIs for use with Javascript libraries and web apps.</description>
+	<repo type="github">https://github.com/rheingolden/restengine</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/#####/</url>
+	<types>
+		<type>Other</type>
+	</types>
+	<authors>
+		<author>
+			<name github="rheingolden" symphony="rheingolden">Kyle McGuire</name>
+			<website>http://kymcism.com</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.1" date="2012-09-25" min="2.3.x">
+			- Initial Beta
+		</release>
+	</releases>
+</extension>

@@ -81,7 +81,12 @@ class ApiPage {
 	}
 
 	public static function getPageList($page_id = 0) {
-		$pagesArray = PageManager::fetchPageByType(extension_RestEngine::pageType());
+		$pagesData = PageManager::fetchPageByType(extension_RestEngine::pageType());
+		if(!is_array($pagesData[0])) {
+			$pagesArray[0] = $pagesData;
+		} else {
+			$pagesArray = $pagesData;
+		}
 		$exclude = RestResourceManager::getExistingRestPages();
 		$pageOptions = array();
 		foreach ($pagesArray as $page) {

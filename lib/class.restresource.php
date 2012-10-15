@@ -20,7 +20,7 @@ class RestResourceManager {
 
 	public static function getExistingRestPages() {
 		$restPages = Symphony::Database()->fetch('SELECT `page_id` FROM `tbl_restengine_fieldmaps` ORDER BY `id` ASC');
-		$pages = array();
+		$pagesFlat = array();
 		foreach ($restPages as $page) {
 			$pagesFlat[] = $page['page_id'];
 		}
